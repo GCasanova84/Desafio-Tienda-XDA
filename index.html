@@ -2,11 +2,15 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+    <meta http-equiv= "X-UA-Compatible" content= "ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Barbershop</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="navegador" class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="assets/img/logo.png" alt="logo" width="30" height="24">
@@ -72,51 +76,48 @@
             fames ac ante ipsum primis in faucibus. Nullam tristique pulvinar est at tristique. Vestibulum non blandit ex. Suspendisse ipsum justo, feugiat
             eu feugiat et, condimentum sit amet ipsum. Pellentesque eu vulputate dolor. Aliquam pretium arcu nec aliquet varius.</p>
         </div>
-        <div class="">
-          <div class="">
+        <div class="row">
+          <div class="col">
             <button type="button" name="button">Compartir</button>
           </div>
-          <div class="">
+          <div class="col">
             <button type="button" name="button">Comentar en Twitter</button>
           </div>
         </div>
       </div>
     </article>
     <section id="naomiThai">
-      <div class="">
-        <div class="">
+      <div class="row">
+        <div class="col">
           <img src="assets/img/naomi-thai.png" class="" alt="Naomi Thai">
         </div>
-        <div class="">
+        <div class="col">
           <h3>Naomi Thai</h3>
           <h4>@Naothai</h4>
           <h4>depelos.com</h4>
         </div>
-        <div class="">
+        <div class="col">
           <p>Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus
             vehicula non. Praesent tincidunt convallis ipsum, quis convallis metus.</p>
         </div>
       </div>
     </section>
     <section id="botones">
-      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-        <div class="btn-group" role="group" aria-label="First group">
-          <button type="button" class="btn btn-outline-secondary">Anterior</button>
-        </div>
-        <div class="btn-group" role="group" aria-label="Second group">
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
-          <label class="btn btn-outline-secondary" for="btnradio1">1</label>
-
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked>
-          <label class="btn btn-outline-secondary" for="btnradio2">2</label>
-
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-          <label class="btn btn-outline-secondary" for="btnradio3">3</label>
-        </div>
-        <div class="btn-group" role="group" aria-label="Third group">
-          <button type="button" class="btn btn-outline-secondary">Siguiente</button>
-        </div>
-      </div>
+      <nav aria-label="...">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
     </section>
     <footer>
       <div class="">
