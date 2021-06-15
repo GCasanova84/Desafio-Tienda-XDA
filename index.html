@@ -6,11 +6,12 @@
     <meta http-equiv= "X-UA-Compatible" content= "ie=edge">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a236162b1f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Barbershop</title>
   </head>
   <body>
-    <nav id="navegador" class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="assets/img/logo.png" alt="logo" width="30" height="24">
@@ -39,26 +40,20 @@
         </div>
       </div>
     </nav>
-    <header>
-      <div class="bg-image" style="background-image: url('assets/img/post-img.jpg');">
-        <div class="">
-          <div class="text-white">
-            <div class="">
-              <div class="">
-                <h1>5 formas de cuidar tu corte de cabello</h1>
-              </div>
-              <div class="">
-
-              </div>
-            </div>
-          </div>
+    <header id="header" class="header">
+      <div class="header__container">
+        <div class="header__title">
+          <h1>5 formas de cuidar tu corte de cabello</h1>
+        </div>
+        <div class="header__link">
+          <a href="#article"><i class="fas fa-angle-double-down"></i></a>
         </div>
       </div>
     </header>
-    <article class="">
-      <div class="">
-        <div class="">
-          <h5>12 de abril de 2018</h5>
+    <article id="article" class="article">
+      <div class="article__container">
+        <div class="article__text">
+          <h5 class="article__title">12 de abril de 2018</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc quam, eget scelerisque quam semper quis. Mauris maximus
             blandit lorem, sit amet condimentum eros auctor quis. In ut semper ipsum, nec condimentum est. Phasellus sodales, nunc vitae feugiat
             consequat, turpis velit euismod mi, eget scelerisque felis odio nec tortor. Ut nibh ex, tincidunt eu feucibus vel, sollicitudin ut velit.</p>
@@ -72,37 +67,33 @@
           <p>Proin quis tortor ante. Cras fermentum urna a felis placerat, eget malesuada ipsum placerat. Fusce scelerisque, leo quis auctor lacinia, mauris
             justo porta enim, eget dictum nisi sapien eget ex.</p>
           <p>Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus
-            vehicula non. Praesent tincidunt convallis ipsum, quis convallis metus. Vivamus ac gravida lectus, eget ultricies nunc. Interdum et malesuada
+            vehicula non. <span class="article__paragraph-emphasis">Praesent tincidunt convallis</span> ipsum, quis convallis metus. Vivamus ac gravida lectus, eget ultricies nunc. Interdum et malesuada
             fames ac ante ipsum primis in faucibus. Nullam tristique pulvinar est at tristique. Vestibulum non blandit ex. Suspendisse ipsum justo, feugiat
             eu feugiat et, condimentum sit amet ipsum. Pellentesque eu vulputate dolor. Aliquam pretium arcu nec aliquet varius.</p>
         </div>
-        <div class="row">
-          <div class="col">
-            <button type="button" name="button">Compartir</button>
-          </div>
-          <div class="col">
-            <button type="button" name="button">Comentar en Twitter</button>
-          </div>
+        <div class="article__buttons">
+          <button class="article__button" type="button" name="button">Compartir</button>
+          <button class="article__button" type="button" name="button">Comentar en Twitter</button>
         </div>
       </div>
     </article>
-    <section id="naomiThai">
-      <div class="row">
-        <div class="col">
-          <img src="assets/img/naomi-thai.png" class="" alt="Naomi Thai">
+    <section id="contact" class="contact">
+      <div class="contact__container row">
+        <div class="contact__thumbnail col-3">
+          <img src="assets/img/naomi-thai.png" class="thumbnail" alt="Naomi Thai">
         </div>
-        <div class="col">
-          <h3>Naomi Thai</h3>
-          <h4>@Naothai</h4>
-          <h4>depelos.com</h4>
+        <div class="contact__contact col-2">
+          <h3 class="contact__name">Naomi Thai</h3>
+          <a class="contact__link" href="#"><h4>@Naothai</h4></a>
+          <h4 class="contact__email">depelos.com</h4>
         </div>
-        <div class="col">
-          <p>Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus
+        <div class="contact__text col-7">
+          <p class="contact__paragraph">Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus
             vehicula non. Praesent tincidunt convallis ipsum, quis convallis metus.</p>
         </div>
       </div>
     </section>
-    <section id="botones">
+    <section id="pagination" class="pagination-container">
       <nav aria-label="...">
         <ul class="pagination">
           <li class="page-item disabled">
@@ -119,10 +110,8 @@
         </ul>
       </nav>
     </section>
-    <footer>
-      <div class="">
-        <img src="assets/img/logo.png" alt="logo">
-      </div>
+    <footer class="footer">
+      <img class="logo" src="assets/img/logo.png" alt="logo">
     </footer>
   </body>
 </html>

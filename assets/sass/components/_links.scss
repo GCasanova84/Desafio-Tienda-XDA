@@ -1,0 +1,19 @@
+.header__link {
+  a {
+    font-size: $x-large;
+    color: $white;
+  }
+  &:hover {
+    a {
+      font-size: 1.1*($x-large);
+      text-shadow: 0 0 3px $platinum;
+    }
+  }
+}
+.contact__link {
+  font-family: $roboto;
+  font-size: $x-large;
+  font-weight: $lighti!important;
+  color: $spanish-pink;
+  text-decoration: none;
+}

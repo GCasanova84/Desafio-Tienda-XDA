@@ -1,4 +1,49 @@
-body{
+.header__title {
+  margin-bottom: 15vw;
+  h1 {
+    font-family: $playfair;
+    font-size: $xx-large;
+    font-weight: $blacki;
+    color: $white;
+    font-style: italic;
+  }
+}
+.article__text {
+  font-size: $large;
+    & .article__title {
+    font-family: $playfair;
+    font-weight: $regular;
+    color: $nickel;
+  }
+  p {
+    font-family: $roboto;
+    font-weight: $lighti;
+    color: $raisin-black;
+    line-height: 3*($large);
+    & .article__paragraph-emphasis {
+      color: $fuzzy-wuzzy;
+    }
+  }
+}
+.contact__contact {
+  font-size: $x-large;
+  padding-top: 5rem;
+  & .contact__name {
+    font-family: $playfair;
+    font-weight: $blacki;
+    font-style: italic;
+    color: $eerie-black;
+  }
+  & .contact__email {
+    font-family: $roboto;
+    font-weight: $lighti;
+    color: $spanish-pink;
+  }
+}
+.contact__text {
+  padding-top: 4.5rem;
   font-family: $roboto;
-  color: $ruddy-pink;
+  font-weight: $regular;
+  color: $nickel;
+  line-height: 3*($medium);
 }
