@@ -47,3 +47,12 @@
   color: $nickel;
   line-height: 3*($medium);
 }
+.article__buttons {
+  font-family: $roboto;
+  font-weight: $lighti;
+  color: $white;
+  font-size: $smalli;
+  & .btn {
+    letter-spacing: 0.1rem;
+  }
+}

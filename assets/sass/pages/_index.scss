@@ -28,7 +28,22 @@
 }
 .pagination-container {
   background-color: $platinum;
+  padding: 2.5rem 0;
+  text-align: center;
+  & .pagination {
+    justify-content: center;
+  }
 }
 .footer {
-  background-color: $eerie-black;
+  padding: 3.5rem 0;
+  text-align: center;
+  & .logo {
+    width: 8rem;
+  }
+}
+.article__buttons {
+  padding-top: 2rem;
+  & .btn {
+    margin-right: 1rem;
+  }
 }

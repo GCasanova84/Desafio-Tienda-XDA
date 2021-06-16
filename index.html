@@ -2,6 +2,9 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Blog de Barbershop">
+    <meta name="keywords" content="barbería, belleza, barbershop, estilo">
+    <meta name="author" content="Gregory Casanova">
     <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
     <meta http-equiv= "X-UA-Compatible" content= "ie=edge">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -11,16 +14,16 @@
     <title>Barbershop</title>
   </head>
   <body>
-    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark position-sticky top-0">
+      <div class="container py-3">
         <a class="navbar-brand" href="#">
-          <img src="assets/img/logo.png" alt="logo" width="30" height="24">
+          <img src="assets/img/logo.png" alt="logo" width="90rem">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Nosotros</a>
             </li>
@@ -72,8 +75,8 @@
             eu feugiat et, condimentum sit amet ipsum. Pellentesque eu vulputate dolor. Aliquam pretium arcu nec aliquet varius.</p>
         </div>
         <div class="article__buttons">
-          <button class="article__button" type="button" name="button">Compartir</button>
-          <button class="article__button" type="button" name="button">Comentar en Twitter</button>
+          <button type="button" class="btn btn-secondary">Compartir</button>
+          <button type="button" class="btn btn-secondary">Comentar en Twitter</button>
         </div>
       </div>
     </article>
@@ -110,7 +113,7 @@
         </ul>
       </nav>
     </section>
-    <footer class="footer">
+    <footer class="footer bg-dark">
       <img class="logo" src="assets/img/logo.png" alt="logo">
     </footer>
   </body>
