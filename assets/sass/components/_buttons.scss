@@ -1,1 +1,36 @@
+//Media Queries Tamaños de botones
 
+//Pantallas hasta 991px
+@media (max-width: 991px) {
+  .article__buttons {
+    & .btn {
+      font-size: $smalli;
+      letter-spacing: 0.5*(0.1rem);
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+    }
+  }
+}
+//Pantallas desde 992px
+@media (min-width: 992px) {
+  .article__buttons {
+    & .btn {
+      font-size: $large;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+.article__buttons {
+  font-family: $roboto;
+  font-weight: $lighti;
+  color: $white;
+}
+.btn:hover {
+  background-color: $light-gray;
+  border-color: $light-gray;
+}
+.btn:focus {
+  background-color: $nickel;
+  border-color: $nickel;
+  box-shadow: 0 0 0 0.25rem $light-gray;
+}

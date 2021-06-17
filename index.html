@@ -14,7 +14,7 @@
     <title>Barbershop</title>
   </head>
   <body>
-    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark position-sticky top-0">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed w-100">
       <div class="container py-3">
         <a class="navbar-brand" href="#">
           <img src="assets/img/logo.png" alt="logo" width="90rem">
@@ -81,16 +81,16 @@
       </div>
     </article>
     <section id="contact" class="contact">
-      <div class="contact__container row">
-        <div class="contact__thumbnail col-3">
-          <img src="assets/img/naomi-thai.png" class="thumbnail" alt="Naomi Thai">
+      <div class="contact__container d-lg-flex">
+        <div class="contact__thumbnail">
+          <img src="assets/img/naomi-thai.png" class="thumbnail thumbnail__size" alt="Naomi Thai">
         </div>
-        <div class="contact__contact col-2">
+        <div class="contact__contact">
           <h3 class="contact__name">Naomi Thai</h3>
-          <a class="contact__link" href="#"><h4>@Naothai</h4></a>
+          <a class="contact__link" href="https://twitter.com/?lang=es" target="_blank"><h4>@Naothai</h4></a>
           <h4 class="contact__email">depelos.com</h4>
         </div>
-        <div class="contact__text col-7">
+        <div class="contact__text d-none d-lg-block">
           <p class="contact__paragraph">Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus
             vehicula non. Praesent tincidunt convallis ipsum, quis convallis metus.</p>
         </div>
@@ -100,7 +100,7 @@
       <nav aria-label="...">
         <ul class="pagination">
           <li class="page-item disabled">
-            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
           </li>
           <li class="page-item"><a class="page-link" href="#">1</a></li>
           <li class="page-item active" aria-current="page">
@@ -108,7 +108,7 @@
           </li>
           <li class="page-item"><a class="page-link" href="#">3</a></li>
           <li class="page-item">
-            <a class="page-link" href="#">Next</a>
+            <a class="page-link" href="#">Siguiente</a>
           </li>
         </ul>
       </nav>

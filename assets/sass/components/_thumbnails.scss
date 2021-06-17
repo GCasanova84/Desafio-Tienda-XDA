@@ -1,0 +1,15 @@
+//Media query para tamaño de thumbnail
+@media (max-width: 991px) {
+  .thumbnail__size {
+    width: 140px;
+  }
+}
+@media (min-width: 992px) {
+  .thumbnail__size {
+    width: 28rem;
+  }
+}
+//Estilo circula thumbnail
+.thumbnail {
+  border-radius: 50%;
+}

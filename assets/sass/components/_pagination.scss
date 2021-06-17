@@ -1,0 +1,21 @@
+@media (max-width: 991px) {
+  .page-link {
+    & .active {
+       @include gradient-bg($eerie-black);
+    }
+  }
+}
+@media (min-width: 992px) {
+  .pagination {
+    & .page-item {
+      font-size: 1.4*($large);
+    }
+  }
+}
+
+.pagination {
+  z-index: -1;
+  & .active {
+    z-index: 0;
+  }
+}

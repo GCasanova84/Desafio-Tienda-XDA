@@ -1,16 +1,54 @@
+//Media Queries Font Sizes
+
+//Pantallas hasta 991px
+@media (max-width: 991px) {
+  .header__title {
+    h1 {
+      font-size: $x-large;
+    }
+  }
+  .article__text {
+    h5 {
+      font-size: $medium;
+    }
+    p {
+      font-size: $medium;
+      line-height: 3*($medium);
+    }
+  }
+}
+//Pantallas desde 992px
+@media (min-width: 992px) {
+  .header__title {
+    h1 {
+      font-size: $xx-large;
+    }
+  }
+  .article__text {
+    h5 {
+      font-size: $large;
+    }
+    p {
+      font-size: $large;
+      line-height: 3*($large);
+    }
+  }
+}
+
+//Tipografía
+
+//Header
 .header__title {
-  margin-bottom: 15vw;
   h1 {
     font-family: $playfair;
-    font-size: $xx-large;
     font-weight: $blacki;
     color: $white;
     font-style: italic;
   }
 }
+//Artículo
 .article__text {
-  font-size: $large;
-    & .article__title {
+  & .article__title {
     font-family: $playfair;
     font-weight: $regular;
     color: $nickel;
@@ -19,40 +57,32 @@
     font-family: $roboto;
     font-weight: $lighti;
     color: $raisin-black;
-    line-height: 3*($large);
     & .article__paragraph-emphasis {
       color: $fuzzy-wuzzy;
     }
   }
 }
+//Contacto
 .contact__contact {
-  font-size: $x-large;
-  padding-top: 5rem;
   & .contact__name {
+    font-size: $x-large;
     font-family: $playfair;
     font-weight: $blacki;
     font-style: italic;
     color: $eerie-black;
   }
   & .contact__email {
+    font-size: $large;
     font-family: $roboto;
     font-weight: $lighti;
     color: $spanish-pink;
   }
 }
 .contact__text {
-  padding-top: 4.5rem;
+  padding-top: 3rem;
+  font-size: $medium;
   font-family: $roboto;
   font-weight: $regular;
   color: $nickel;
-  line-height: 3*($medium);
-}
-.article__buttons {
-  font-family: $roboto;
-  font-weight: $lighti;
-  color: $white;
-  font-size: $smalli;
-  & .btn {
-    letter-spacing: 0.1rem;
-  }
+  line-height: 2.5*($medium);
 }

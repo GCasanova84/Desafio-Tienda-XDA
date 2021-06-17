@@ -12,8 +12,17 @@
 }
 .contact__link {
   font-family: $roboto;
-  font-size: $x-large;
-  font-weight: $lighti!important;
   color: $spanish-pink;
   text-decoration: none;
+  h4 {
+    font-size: $large;
+    font-weight: $lighti!important;
+    margin-bottom: 0.5rem;
+  }
+}
+.contact__link:hover {
+  color: $nickel;
+}
+.contact__link:active {
+  color: $light-gray;
 }
