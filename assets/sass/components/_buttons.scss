@@ -4,10 +4,12 @@
 @media (max-width: 991px) {
   .article__buttons {
     & .btn {
-      font-size: $smalli;
-      letter-spacing: 0.5*(0.1rem);
-      padding-top: 0.8rem;
-      padding-bottom: 0.8rem;
+      font-size: 0.9*($smalli);
+      letter-spacing: 0.2*(0.1rem);
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      padding-left: 0.7rem;
+      padding-right: 0.7rem;
     }
   }
 }

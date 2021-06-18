@@ -10810,10 +10810,12 @@ img, media {
 
 @media (max-width: 991px) {
   .article__buttons .btn {
-    font-size: 12px;
-    letter-spacing: 0.05rem;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    font-size: 10.8px;
+    letter-spacing: 0.02rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
   }
 }
 @media (min-width: 992px) {
@@ -10867,14 +10869,12 @@ img, media {
   color: #D1D1D1;
 }
 
-@media (max-width: 991px) {
-  .page-link .active {
-    background-color: #121619;
-  }
-}
 @media (min-width: 992px) {
   .pagination .page-item {
     font-size: 25.2px;
+  }
+  .pagination .page-item .page-link {
+    padding: 0.6rem 1.2rem;
   }
 }
 .pagination {
@@ -10901,13 +10901,15 @@ img, media {
 @media (max-width: 991px) {
   .navbar {
     padding: 0 2rem;
+    height: 14vh;
   }
 
   .header {
-    padding: 40vh 20vw;
+    height: 86vh;
+    padding: 35vh 20vw;
   }
   .header .header__title {
-    margin-bottom: 30vh;
+    margin-bottom: 23vh;
   }
 
   .article {
@@ -10925,8 +10927,8 @@ img, media {
     text-align: center;
   }
   .article__buttons .btn {
-    margin-right: 0.25rem;
-    margin-left: 0.25rem;
+    margin-right: 0.1rem;
+    margin-left: 0.1rem;
   }
 
   .contact {
@@ -10959,11 +10961,16 @@ img, media {
   }
 }
 @media (min-width: 992px) {
+  .navbar {
+    height: 15vh;
+  }
+
   .header {
-    padding: 30vh 25vw;
+    height: 85vh;
+    padding: 25vh 25vw;
   }
   .header .header__title {
-    margin-bottom: 30vh;
+    margin-bottom: 21vh;
   }
 
   .article {
@@ -11012,11 +11019,11 @@ img, media {
     width: 8rem;
   }
 }
-article::before {
-  height: 500px;
+a.anchor {
   display: block;
-  content: "";
-  margin-top: -500px;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
 }
 
 nav {
@@ -11026,7 +11033,6 @@ nav {
 .header {
   background-color: #121619;
   background-image: url("../img/post-image.jpg");
-  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

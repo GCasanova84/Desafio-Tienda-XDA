@@ -1,11 +1,14 @@
 @media (max-width: 991px) {
   .navbar {
     padding: 0 2rem;
+    height: 14vh;
+
   }
   .header {
-    padding: 40vh 20vw;
+    height: 86vh;
+    padding: 35vh 20vw;
     & .header__title {
-      margin-bottom: 30vh;
+      margin-bottom: 23vh;
     }
   }
   .article {
@@ -21,8 +24,8 @@
     padding-top: 2rem;
     text-align: center;
     & .btn {
-      margin-right: 0.25rem;
-      margin-left:  0.25rem;
+      margin-right: 0.1rem;
+      margin-left:  0.1rem;
     }
   }
   .contact {
@@ -53,10 +56,14 @@
   }
 }
 @media (min-width: 992px) {
+  .navbar {
+    height: 15vh;
+  }
   .header {
-    padding: 30vh 25vw;
+    height: 85vh;
+    padding: 25vh 25vw;
     & .header__title {
-      margin-bottom: 30vh;
+      margin-bottom: 21vh;
     }
   }
   .article {
@@ -103,11 +110,11 @@
 }
 
 //Pseudo elemento para cuadrar scroll
-article::before {
-  height: 500px;
-  display: block;
-  content: "";
-  margin-top: -500px;
+a.anchor {
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
 }
 //navbar
 nav {
@@ -117,7 +124,6 @@ nav {
 .header {
   background-color: $eerie-black;
   background-image: url('../img/post-image.jpg');
-  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
