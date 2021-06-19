@@ -2,87 +2,10 @@
 
 //Pantallas hasta 991px
 @media (max-width: 991px) {
-  .header__title {
-    h1 {
-      font-size: $x-large;
-    }
-  }
-  .article__text {
-    h5 {
-      font-size: $medium;
-    }
-    p {
-      font-size: $medium;
-      line-height: 3*($medium);
-    }
-  }
-}
+
 //Pantallas desde 992px
 @media (min-width: 992px) {
-  .header__title {
-    h1 {
-      font-size: $xx-large;
-    }
-  }
-  .article__text {
-    h5 {
-      font-size: $large;
-    }
-    p {
-      font-size: $large;
-      line-height: 3*($large);
-    }
-  }
+
 }
 
 //Tipografía
-
-//Header
-.header__title {
-  h1 {
-    font-family: $playfair;
-    font-weight: $blacki;
-    color: $white;
-    font-style: italic;
-  }
-}
-//Artículo
-.article__text {
-  & .article__title {
-    font-family: $playfair;
-    font-weight: $regular;
-    color: $nickel;
-  }
-  p {
-    font-family: $roboto;
-    font-weight: $lighti;
-    color: $raisin-black;
-    & .article__paragraph-emphasis {
-      color: $fuzzy-wuzzy;
-    }
-  }
-}
-//Contacto
-.contact__contact {
-  & .contact__name {
-    font-size: $x-large;
-    font-family: $playfair;
-    font-weight: $blacki;
-    font-style: italic;
-    color: $eerie-black;
-  }
-  & .contact__email {
-    font-size: $large;
-    font-family: $roboto;
-    font-weight: $lighti;
-    color: $spanish-pink;
-  }
-}
-.contact__text {
-  padding-top: 3rem;
-  font-size: $medium;
-  font-family: $roboto;
-  font-weight: $regular;
-  color: $nickel;
-  line-height: 2.5*($medium);
-}
