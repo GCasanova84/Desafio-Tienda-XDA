@@ -1,0 +1,11 @@
+@mixin xda-text($f-family, $f-size, $f-weight, $f-color) {
+  font-family: $f-family;
+  font-size: $f-size;
+  font-weight: $f-weight;
+  color: $f-color;
+}
+@mixin screen-view($min-size) {
+  @media (min-width: #{$min-size}) {
+    @content;
+  }
+}

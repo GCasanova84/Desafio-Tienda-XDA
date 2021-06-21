@@ -1,0 +1,9 @@
+.form__input {
+  & .form-control {
+    @include xda-text($raleway, $x-small, $xda-regular, $xda-smoky-black);
+    border-radius: 0;
+  }
+}
+.form-control::placeholder {
+  color: $xda-smoky-black!important;
+}

@@ -1,0 +1,21 @@
+.text__button {
+  & .btn {
+    @include xda-text($raleway, $small, $xda-bold, $xda-smoky-black);
+    border-color: $xda-smoky-black;
+    border-radius: 0;
+    @include screen-view($min-tablet) {
+      font-size: $large;
+      padding: 0.5rem 2rem;
+    }
+  }
+}
+.btn:hover {
+  border-color: $xda-light-gray;
+  background-color: transparent;
+}
+.btn:focus {
+  color: $xda-light-gray;
+  border-color: $xda-light-gray;
+  background-color: transparent;
+  box-shadow: 0 0 0 0;
+}

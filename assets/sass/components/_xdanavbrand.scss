@@ -1,0 +1,53 @@
+.navbar__container {
+  & .navbar-brand__container {
+    padding: 0.96rem 0.72rem;
+    background-color: $xda-smoky-black;
+    & .navbar-brand {
+      vertical-align: middle;
+      @include xda-text($old-standard-tt, $x-large, $xda-bold, $xda-white);
+    }
+  }
+  span i {
+    font-size: 1.5rem;
+    text-transform: full-width;
+    -webkit-transform:scale(1.2,1.0);
+    -moz-transform:scale(1.2, 1.0);
+    -ms-transform:scale(1.2, 1.0);
+    -o-transform:scale(1.2, 1.0);
+    transform:scale(1.2,1.0);
+  }
+  & .nav-link {
+    @include xda-text($raleway, $medium, $xda-bold, $xda-smoky-black);
+  }
+  @include screen-view($min-tablet) {
+    & .navbar-brand__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 6.2rem;
+      width: 6.4rem;
+      & .navbar-brand {
+        @include xda-text($old-standard-tt, $xx-large, $xda-bold, $xda-white);
+         -webkit-transform: rotate(-90deg);
+             -ms-transform: rotate(-90deg);
+                 transform: rotate(-90deg);
+      }
+    }
+    & .nav-link {
+      @include xda-text($raleway, $large, $xda-bold, $xda-smoky-black);
+      margin-right: 2rem;
+    }
+  }
+}
+
+
+.nav-link:hover {
+  @include xda-text($raleway, $large, $xda-bold, $xda-quick-silver);
+}
+.navbar-toggler-icon {
+    background-image: none;
+}
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0;
+    color: $xda-granite-gray;
+}

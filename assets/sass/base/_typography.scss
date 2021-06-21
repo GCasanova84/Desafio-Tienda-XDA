@@ -1,11 +1,37 @@
-//Media Queries Font Sizes
-
-//Pantallas hasta 991px
-@media (max-width: 991px) {
-
-//Pantallas desde 992px
-@media (min-width: 992px) {
-
-}
-
 //Tipografía
+h1 {
+  @include xda-text($old-standard-tt, $xx-large, $xda-bold, $xda-smoky-black);
+}
+h2 {
+  @include xda-text($old-standard-tt, $x-large, $xda-bold, $xda-white);
+}
+h3 {
+  @include xda-text($old-standard-tt, $large, $xda-bold, $xda-smoky-black);
+}
+.form-label {
+  @include xda-text($old-standard-tt, $small, $xda-regular, $xda-white);
+}
+p {
+  @include xda-text($raleway, $small, $xda-regular, $xda-granite-gray);
+}
+//Screen size above 768px
+@include screen-view($min-tablet) {
+  h1 {
+    @include xda-text($old-standard-tt, $xxx-large, $xda-bold, $xda-smoky-black);
+  }
+  h2 {
+    @include xda-text($old-standard-tt, $xx-large, $xda-bold, $xda-white);
+  }
+  .form-label {
+    @include xda-text($old-standard-tt, $medium, $xda-regular, $xda-white);
+  }
+  p {
+    @include xda-text($raleway, $medium, $xda-regular, $xda-granite-gray);
+  }
+}
+//Screen size above 992px
+@include screen-view($min-tablet) {
+  h3 {
+    @include xda-text($old-standard-tt, $x-large, $xda-bold, $xda-smoky-black);
+  }
+}

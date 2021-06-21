@@ -1,6 +1,145 @@
-@media (max-width: 991px) {
-
+.navbar {
+  background-color: $xda-white;
 }
-@media (min-width: 992px) {
-
+.main__image {
+  & .image {
+    width: 100vw;
+    height: 58.67vw;
+    object-fit: cover;
+    object-position: top;
+  }
+  @include screen-view($min-tablet) {
+    & .image {
+      height: 43.8vw;
+      object-position: center 33%;
+    }
+  }
+  @include screen-view($min-laptop) {
+    width: 57.5vw;
+    & .image {
+      height: auto;
+    }
+  }
+}
+.main {
+  @include screen-view($min-laptop) {
+    display: flex;
+    flex-direction: row-reverse;
+    .main__container {
+      width: 42.5vw;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.main__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  & .text {
+    min-width: 16.25rem;
+    max-width: 22.5rem;
+    & .text__title {
+      margin-bottom: 0.5rem;
+    }
+    & .text__paragraph {
+      height: 4.6rem;
+      overflow: hidden;
+      line-height: 1.8;
+    }
+    & .text__button {
+      margin-top: 1.25rem;
+    }
+  }
+  @include screen-view($min-tablet) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 5rem;
+    padding-top: 1rem;
+    & .text {
+      min-width: none;
+      max-width: 30rem;
+      & .text__paragraph {
+        height: auto;
+        overflow: auto;
+        line-height: 1.8;
+      }
+    }
+  }
+  @include screen-view($min-laptop) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    & .text {
+      & .text__title {
+        margin-bottom: 1rem;
+      }
+      & .text__paragraph {
+        max-width: 18rem;
+      }
+      & .text__button {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
+.main__form {
+  display: flex;
+  & .my-form {
+    background-color: $xda-smoky-black;
+    width: 86.67vw;
+    padding: 1.5rem 3rem;
+  }
+  & .main__banner {
+    width: 13.33vw;
+    display: flex;
+    & .my-banner {
+      height: 13.33vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto 0;
+     -webkit-transform-origin : 0 0;
+         -ms-transform-origin : 0 0;
+             transform-origin : 0 0;
+      -webkit-transform: rotate(90deg) translate(-12px, -13.33vw);
+          -ms-transform: rotate(90deg) translate(-12px, -13.33vw);
+              transform: rotate(90deg) translate(-12px, -13.33vw);
+    }
+  }
+  @include screen-view($min-tablet) {
+    & .my-form {
+      width: 93.75vw;
+      padding: 1rem 6rem 4rem 5rem;
+    }
+    & .main__banner {
+      width: 6.25vw;
+      & .my-banner {
+        height: 6.25vw;
+        -webkit-transform: rotate(90deg) translate(-12px, -6.25vw);
+            -ms-transform: rotate(90deg) translate(-12px, -6.25vw);
+                transform: rotate(90deg) translate(-12px, -6.25vw);
+      }
+    }
+  }
+  @include screen-view($min-laptop) {
+    height: 100%;
+    & .my-form {
+      width: 91.18%;
+      padding-top: 2rem;
+      padding-right: 12rem;
+      & .form__title {
+        margin-bottom: 1rem;
+      }
+    }
+    & .main__banner {
+      width: 8.82%;
+      & .my-banner {
+        height: 8.82%;
+        -webkit-transform: rotate(90deg) translate(-25%, -170%);
+            -ms-transform: rotate(90deg) translate(-25%, -170%);
+                transform: rotate(90deg) translate(-25%, -170%);
+      }
+    }
+  }
 }
