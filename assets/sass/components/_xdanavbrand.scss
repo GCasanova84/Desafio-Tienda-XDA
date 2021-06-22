@@ -1,13 +1,114 @@
-.navbar__container {
-  & .navbar-brand__container {
-    padding: 0.96rem 0.72rem;
-    background-color: $xda-smoky-black;
-    & .navbar-brand {
-      vertical-align: middle;
-      @include xda-text($old-standard-tt, $x-large, $xda-bold, $xda-white);
+.my-nav {
+  & .my-nav__container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    & .my-nav__mobile {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      & .my-nav__brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4.1rem;
+        width: 4.1rem;
+        background-color: $xda-smoky-black;
+        & .brand {
+          @include xda-text($old-standard-tt, $x-large, $xda-bold, $xda-white);
+          line-height: 1;
+          padding-top: 0.35rem;
+        }
+      }
+      & .my-nav__toggler {
+        & .toggle-button__container {
+          display: flex;
+          position: relative;
+          height: 100%;
+          padding: 0.5rem;
+          & input.toggle-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            z-index: 1;
+            -webkit-transform: scale(2.5);
+                -ms-transform: scale(2.5);
+                    transform: scale(2.5);
+          }
+          & .toggle-button__icon {
+            display: flex;
+            height: 50%;
+            text-align: center;
+            align-items: center;
+            position: absolute;
+            z-index: 0;
+            top: 25%;
+            color: $xda-smoky-black;
+            -webkit-transform: scale(1.5, 1.5);
+                -ms-transform: scale(1.5, 1.5);
+                    transform: scale(1.5, 1.5);
+          }
+        }
+      }
+    }
+    & .my-nav__menu {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0.5rem;
+      & .my-nav__item {
+        line-height: 1;
+        padding: 0.8rem 0;
+        @include xda-text($raleway, $medium, $xda-bold, $xda-smoky-black);
+      }
     }
   }
-  span i {
+  @include screen-view($min-tablet) {
+    & .my-nav__container {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right: 5rem;
+      & .my-nav__mobile {
+        width: auto;
+        & .my-nav__brand {
+          justify-content: center;
+          height: 6.4rem;
+          width: 6.4rem;
+          & .brand {
+            @include xda-text($old-standard-tt, $xx-large, $xda-bold, $xda-white);
+            padding-top: 0.3rem;
+            -webkit-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
+                    transform: rotate(-90deg);
+          }
+        }
+        & .my-nav__toggler {
+          display: none;
+        }
+      }
+      & .my-nav__menu {
+        flex-direction: row;
+        align-items: center;
+        & .my-nav__item {
+          padding: 0 0 0 3rem;
+          @include xda-text($raleway, $large, $xda-bold, $xda-smoky-black);
+        }
+        & .my-nav__item:hover {
+          @include xda-text($raleway, $large, $xda-bold, $xda-quick-silver);
+        }
+      }
+    }
+  }
+}
+
+.brand, .my-nav__item {
+  text-decoration: none;
+}
+.brand:hover {
+  color: $xda-white;
+}
+
+/*  span i {
     font-size: 1.5rem;
     text-transform: full-width;
     -webkit-transform:scale(1.2,1.0);
@@ -15,39 +116,4 @@
     -ms-transform:scale(1.2, 1.0);
     -o-transform:scale(1.2, 1.0);
     transform:scale(1.2,1.0);
-  }
-  & .nav-link {
-    @include xda-text($raleway, $medium, $xda-bold, $xda-smoky-black);
-  }
-  @include screen-view($min-tablet) {
-    & .navbar-brand__container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 6.2rem;
-      width: 6.4rem;
-      & .navbar-brand {
-        @include xda-text($old-standard-tt, $xx-large, $xda-bold, $xda-white);
-         -webkit-transform: rotate(-90deg);
-             -ms-transform: rotate(-90deg);
-                 transform: rotate(-90deg);
-      }
-    }
-    & .nav-link {
-      @include xda-text($raleway, $large, $xda-bold, $xda-smoky-black);
-      margin-right: 2rem;
-    }
-  }
-}
-
-
-.nav-link:hover {
-  @include xda-text($raleway, $large, $xda-bold, $xda-quick-silver);
-}
-.navbar-toggler-icon {
-    background-image: none;
-}
-.navbar-toggler:focus {
-    box-shadow: 0 0 0 0;
-    color: $xda-granite-gray;
-}
+  }*/

@@ -10849,75 +10849,138 @@ p {
   color: #0C0910 !important;
 }
 
-.navbar__container .navbar-brand__container {
-  padding: 0.96rem 0.72rem;
+.my-nav .my-nav__container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+.my-nav .my-nav__container .my-nav__mobile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.my-nav .my-nav__container .my-nav__mobile .my-nav__brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.1rem;
+  width: 4.1rem;
   background-color: #0C0910;
 }
-.navbar__container .navbar-brand__container .navbar-brand {
-  vertical-align: middle;
+.my-nav .my-nav__container .my-nav__mobile .my-nav__brand .brand {
   font-family: "Old Standard TT", serif;
   font-size: 20px;
   font-weight: 700;
   color: #FFF;
+  line-height: 1;
+  padding-top: 0.35rem;
 }
-.navbar__container span i {
-  font-size: 1.5rem;
-  text-transform: full-width;
-  -webkit-transform: scale(1.2, 1);
-  -moz-transform: scale(1.2, 1);
-  -ms-transform: scale(1.2, 1);
-  -o-transform: scale(1.2, 1);
-  transform: scale(1.2, 1);
+.my-nav .my-nav__container .my-nav__mobile .my-nav__toggler .toggle-button__container {
+  display: flex;
+  position: relative;
+  height: 100%;
+  padding: 0.5rem;
 }
-.navbar__container .nav-link {
+.my-nav .my-nav__container .my-nav__mobile .my-nav__toggler .toggle-button__container input.toggle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transform: scale(2.5);
+  -ms-transform: scale(2.5);
+  transform: scale(2.5);
+}
+.my-nav .my-nav__container .my-nav__mobile .my-nav__toggler .toggle-button__container .toggle-button__icon {
+  display: flex;
+  height: 50%;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  z-index: 0;
+  top: 25%;
+  color: #0C0910;
+  -webkit-transform: scale(1.5, 1.5);
+  -ms-transform: scale(1.5, 1.5);
+  transform: scale(1.5, 1.5);
+}
+.my-nav .my-nav__container .my-nav__menu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5rem;
+}
+.my-nav .my-nav__container .my-nav__menu .my-nav__item {
+  line-height: 1;
+  padding: 0.8rem 0;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #0C0910;
 }
 @media (min-width: 768px) {
-  .navbar__container .navbar-brand__container {
-    display: flex;
+  .my-nav .my-nav__container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 5rem;
+  }
+  .my-nav .my-nav__container .my-nav__mobile {
+    width: auto;
+  }
+  .my-nav .my-nav__container .my-nav__mobile .my-nav__brand {
     justify-content: center;
-    align-items: center;
-    height: 6.2rem;
+    height: 6.4rem;
     width: 6.4rem;
   }
-  .navbar__container .navbar-brand__container .navbar-brand {
+  .my-nav .my-nav__container .my-nav__mobile .my-nav__brand .brand {
     font-family: "Old Standard TT", serif;
     font-size: 30px;
     font-weight: 700;
     color: #FFF;
+    padding-top: 0.3rem;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
   }
-  .navbar__container .nav-link {
+  .my-nav .my-nav__container .my-nav__mobile .my-nav__toggler {
+    display: none;
+  }
+  .my-nav .my-nav__container .my-nav__menu {
+    flex-direction: row;
+    align-items: center;
+  }
+  .my-nav .my-nav__container .my-nav__menu .my-nav__item {
+    padding: 0 0 0 3rem;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #0C0910;
-    margin-right: 2rem;
+  }
+  .my-nav .my-nav__container .my-nav__menu .my-nav__item:hover {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #A6A5A8;
   }
 }
 
-.nav-link:hover {
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #A6A5A8;
+.brand, .my-nav__item {
+  text-decoration: none;
 }
 
-.navbar-toggler-icon {
-  background-image: none;
+.brand:hover {
+  color: #FFF;
 }
 
-.navbar-toggler:focus {
-  box-shadow: 0 0 0 0;
-  color: #646266;
-}
-
-.navbar {
+/*  span i {
+    font-size: 1.5rem;
+    text-transform: full-width;
+    -webkit-transform:scale(1.2,1.0);
+    -moz-transform:scale(1.2, 1.0);
+    -ms-transform:scale(1.2, 1.0);
+    -o-transform:scale(1.2, 1.0);
+    transform:scale(1.2,1.0);
+  }*/
+.my-nav {
   background-color: #FFF;
 }
 
